@@ -1,0 +1,26 @@
+{
+  "name": "flipkarDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": " npx playwright show-report",
+    "prod":"npx cross-env ENV=prod npm test",
+    "stage":"npx cross-env ENV=stage npm test",
+    "demo":"npx cross-env ENV=demo npm test",
+    "dev":"npx cross-env ENV=dev npm test"
+  },
+  "keywords": [
+    "playwright test runner",
+    "playwright typscript framework"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.21.0",
+    "axe-playwright": "^1.1.11",
+    "ts-node": "10.7.0",
+    "typescript": "4.6.3"
+  }
+}
